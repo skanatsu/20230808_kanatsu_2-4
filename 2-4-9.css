@@ -1,0 +1,63 @@
+
+.form {
+    background-color: antiquewhite;
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    /* width: 80%; */
+    margin: 0 auto;
+    border-top: 1px solid black;
+    align-items: center;
+    /* 上下で中央ぞろえになる。これが無いとinputなどが上になってしまう */
+}
+
+.must {
+    background-color: aquamarine;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.itemname {
+    /* position: relative; */
+    display: inline;
+    text-align: left;
+}
+
+.itemname::before {
+    /* position: absolute; */
+    content: "必須";
+    background-color: aquamarine;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.label {
+    height: 30px;
+    background-color: lightslategray;
+    border-radius: 10px;
+    /* margin-top: 10px;     */
+    /* margin-top以外の指定方法は？ */
+}
+
+.textarea {
+    background-color: lightslategray;
+    border-radius: 10px;
+    margin-top: 10px;
+    /* margin-top以外の指定方法は？ */
+    margin-bottom: 10px;
+}
+
+.button {
+    font-size: 20px;
+    background-color: aquamarine;
+    border: none;
+    padding: 30px 80px;
+    margin: 20px auto;
+    border-radius: 30px;
+}
